@@ -45,7 +45,7 @@ public class PoloniexAdapters {
     BigDecimal ask = marketData.getLowestAsk();
     BigDecimal high = marketData.getHigh24hr();
     BigDecimal low = marketData.getLow24hr();
-    BigDecimal volume = marketData.getQuoteVolume();
+    BigDecimal volume = marketData.getBaseVolume();
 
     return new Ticker.Builder().currencyPair(currencyPair).last(last).bid(bid).ask(ask).high(high).low(low).volume(volume).build();
 
